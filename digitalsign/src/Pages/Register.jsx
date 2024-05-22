@@ -22,7 +22,7 @@ const Register = () => {
         e.preventDefault();
 
         try {
-            const res = await axios.post("http://localhost:5000/api/user/register", user);
+            const res = await axios.post("https://signifyx.onrender.com/api/user/register", user);
 
             if (res.data.success) {
                 alert("Regsiter Successfully");
